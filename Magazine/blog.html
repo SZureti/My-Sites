@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Wandering Nomad!</title>
+  <link rel="icon" href="./favicon.ico">
+  <link rel="stylesheet" type="text/css" href="./css/index.css" />
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+  <script src="./components/tabs/tabs.js" async></script>
+  <script src="./components/carousel/carousel.js" async></script> 
+</head>
+
+<body>
+
+  <!-- TOP BAR COMPONENT -->
+  <div class="top-bar">
+    <div class="container">
+      <div class="container-left">
+        <span>TOPICS</span><span>SEARCH</span>
+      </div>
+      <div class="container-center">
+        <span>GENERAL</span><span>BROWNBAG</span><span>RANDOM</span><span>MUSIC</span><span>ANNOUNCEMENTS</span>
+      </div>
+      <div class="container-right">
+        <span>LOG IN</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- HEADER COMPONENT -->
+  <div class="header">
+    <span class="date">June 21, 2019</span>
+    <h1>Sundry Times</h1>
+    <span class="temp">98°</span>
+  </div>
+
+  <!-- TABS COMPONENT -->
+  <div class="tabs">
+    <div class="topics">
+      <span class="title">TRENDING TOPICS:</span>
+      <div data-tab="all" class="tab active-tab">ALL</div>
+      <div data-tab="javascript" class="tab">JAVASCRIPT</div>
+      <div data-tab="technology" class="tab">TECHNOLOGY</div>
+      <div data-tab="node" class="tab">NODE.JS</div>
+      <div data-tab="jquery" class="tab">jQUERY</div>
+      <div data-tab="bootstrap" class="tab">BOOTSTRAP</div>
+    </div>
+  </div>
+
+  <!-- STRETCH GOAL: ONLY UNCOMMENT THIS WHEN YOU ARE FINISHED WITH THE MAIN OBJECTIVE -->
+  <!-- CAROUSEL COMPONENT -->
+   <!-- <div class="carousel">
+    <div class="left-button"><</div>
+    <img src="https://images.unsplash.com/photo-1522204523234-8729aa6e3d5f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80" alt="Picture of Tablet and Plants" class="photo"/>
+    <img src="https://i.ibb.co/p2GJHzL/blake-wisz-1554907-unsplash.jpg" alt="Picture of Tablet and Phone by Blake Wisz" class="photo" />
+    <img src="https://i.ibb.co/Fm638Cf/haupes-co-1698332-unsplash.jpg" alt="Picture of Work Space with Camera by Haupes" class="photo" />
+    <img src="./assets/carousel/mountains.jpeg" alt="Picture of Mountains" class="photo" />
+    <img src="./assets/carousel/computer.jpeg" alt="Picture of Computer" class="photo" />
+    <img src="./assets/carousel/trees.jpeg" alt="Picture of Trees" class="photo" />
+    <img src="./assets/carousel/turntable.jpeg" alt="Picture of Turntable" class="photo" />
+    <div class="right-button">></div>
+  </div>  -->
+
+  <!-- CARDS COMPONENT -->
+  <div class="cards-container">
+
+    <!-- CARD COMPONENTS -->
+    <div class="card" data-tab="bootstrap">
+      <div class="headline">How Bootstrap can make your life as a developer x10 better</div>
+      <div class="author">
+        <div class="img-container">
+          <img src="http://geniusvets.s3.amazonaws.com/gv-dog-breeds/american-pitbull-1.jpg" />
+        </div>
+        <span>By Saipher Zureti</span>
+      </div>
+    </div>
+
+    <div class="card" data-tab="jquery">
+      <div class="headline">Do we really need jQuery? Let's talk Pros and Cons</div>
+      <div class="author">
+        <div class="img-container">
+          <img src="http://geniusvets.s3.amazonaws.com/gv-dog-breeds/american-pitbull-1.jpg" />
+        </div>
+        <span>By Saipher Zureti</span>
+      </div>
+    </div>
+
+    <div class="card" data-tab="node">
+      <div class="headline">What is Node.JS and Why you should learn it in 2019</div>
+      <div class="author">
+        <div class="img-container">
+          <img src="http://geniusvets.s3.amazonaws.com/gv-dog-breeds/american-pitbull-1.jpg" />
+        </div>
+        <span>By Saipher Zureti</span>
+      </div>
+    </div>
+
+    <div class="card" data-tab="javascript">
+      <div class="headline">ES8: The Next Step in the Evolution of Javascript and What it Means For Your Projects</div>
+      <div class="author">
+        <div class="img-container">
+          <img src="./assets/sir.jpg" />
+        </div>
+        <span>By Saipher Zureti</span>
+      </div>
+    </div>
+
+    <div class="card" data-tab="javascript">
+      <div class="headline">Type Coercion: Why Does NaN !== NaN? and Other Strange Occurrences</div>
+      <div class="author">
+        <div class="img-container">
+          <img src="./assets/bones.jpg" />
+        </div>
+        <span>By Saipher Zureti</span>
+      </div>
+    </div>
+
+    <div class="card" data-tab="bootstrap">
+      <div class="headline">Bootstrap 5: Get a Sneak Peak at all the New Features</div>
+      <div class="author">
+        <div class="img-container">
+          <img src="./assets/fido.jpg" />
+        </div>
+        <span>By Saipher Zureti</span>
+      </div>
+    </div>
+
+    <div class="card" data-tab="technology">
+      <div class="headline">AI: What Are the Ethical Ramifications of the Future?</div>
+      <div class="author">
+        <div class="img-container">
+          <img src="./assets/max.jpg" />
+        </div>
+        <span>By Saipher Zureti</span>
+      </div>
+    </div>
+
+    <div class="card" data-tab="jquery">
+      <div class="headline">History of Javascript Libraries: from jQuery to React</div>
+      <div class="author">
+        <div class="img-container">
+          <img src="./assets/puppers.jpg" />
+        </div>
+        <span>By Saipher Zureti</span>
+      </div>
+    </div>
+
+    <div class="card" data-tab="bootstrap">
+      <div class="headline">UI Frameworks: A Comparison, Which Made Our List? (Hint: Bootstrap is on it)</div>
+      <div class="author">
+        <div class="img-container">
+          <img src="./assets/max.jpg" />
+        </div>
+        <span>By Saipher Zureti</span>
+      </div>
+    </div>
+
+    <div class="card" data-tab="node">
+      <div class="headline">Node.js in 2018: Which Framework? Express, Sails, Hapi?</div>
+      <div class="author">
+        <div class="img-container">
+          <img src="./assets/sir.jpg" />
+        </div>
+        <span>By Saipher Zureti</span>
+      </div>
+    </div>
+
+    <div class="card" data-tab="node">
+      <div class="headline">MongoDB: NoSQL vs. SQL, the Debate Continues...</div>
+      <div class="author">
+        <div class="img-container">
+          <img src="./assets/bones.jpg" />
+        </div>
+        <span>By Saipher Zureti</span>
+      </div>
+    </div>
+
+    <div class="card" data-tab="jquery">
+      <div class="headline">jQuery Animations: When and Where to Use Them, and Not CSS</div>
+      <div class="author">
+        <div class="img-container">
+          <img src="./assets/fido.jpg" />
+        </div>
+        <span>By Saipher Zureti</span>
+      </div>
+    </div>
+
+    <div class="card" data-tab="technology">
+      <div class="headline">AR or VR: How We Will See the World Through a Digital Lense</div>
+      <div class="author">
+        <div class="img-container">
+          <img src="./assets/max.jpg" />
+        </div>
+        <span>By Saipher Zureti</span>
+      </div>
+    </div>
+
+    <div class="card" data-tab="javascript">
+      <div class="headline">When to Rest, When to Spread: Why There Are Two Meanings Behind '...'</div>
+      <div class="author">
+        <div class="img-container">
+          <img src="./assets/puppers.jpg" />
+        </div>
+        <span>By Saipher Zureti</span>
+      </div>
+    </div>
+
+    <div class="card" data-tab="javascript">
+      <div class="headline">Typescript: Ten Things you Should Know Before Building Your Next Angular Application</div>
+      <div class="author">
+        <div class="img-container">
+          <img src="./assets/sir.jpg" />
+        </div>
+        <span>By Saipher Zureti</span>
+      </div>
+    </div>
+
+    <div class="card" data-tab="technology">
+      <div class="headline">Quantum Computing: Where we Are Now, and Where We Will Be Very Soon</div>
+      <div class="author">
+        <div class="img-container">
+          <img src="./assets/max.jpg" />
+        </div>
+        <span>By Saipher Zureti</span>
+      </div>
+    </div>
+
+    <div class="card" data-tab="jquery">
+      <div class="headline">Why I Use jQuery in Every Application I Create and Why You Should Too</div>
+      <div class="author">
+        <div class="img-container">
+          <img src="./assets/fido.jpg" />
+        </div>
+        <span>By Saipher Zureti</span>
+      </div>
+    </div>
+
+    <div class="card" data-tab="bootstrap">
+      <div class="headline">The Hottest New Bootstrap 4 Components Every Developer Needs to Know About</div>
+      <div class="author">
+        <div class="img-container">
+          <img src="./assets/max.jpg" />
+        </div>
+        <span>By Saipher Zureti</span>
+      </div>
+    </div>
+
+  </div>
+</body>
+
+</html>
