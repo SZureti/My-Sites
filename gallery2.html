@@ -1,0 +1,111 @@
+<html>
+    <head>
+	<title>Gallery</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets3/css/gallery2.css" />
+        <script src="assets3/js/gallery.js"></script>
+	</head>
+    <header>
+    <nav id="nav">
+        <a href="index.html">Home</a>
+    </nav> 
+    <h1>Gallery</h1>
+    </header>
+    <body>
+ <!--      
+        <div class="gallery"> 
+            
+            <a href="/images3/fulls/1.jpg"><img src="/images3/fulls/1.jpg">
+            <a href="/images3/fulls/3.jpg"><img src="/images3/fulls/3.jpg">
+            <a href="/images3/fulls/intro2.jpg"><img src="/images3/fulls/intro2.jpg">
+            <a href="/images3/fulls/5.jpg"><img src="/images3/fulls/5.jpg">
+            <a href="/images3/fulls/8.jpg"><img src="/images3/fulls/8.jpg"> 
+            <a href="/images3/fulls/BKK6.jpg"><img src="/images3/fulls/BKK6.jpg">
+            <a href="/images3/fulls/9.jpg"><img src="/images3/fulls/9.jpg">
+            <a href="/images3/fulls/one1.jpg"><img src="/images3/fulls/one1.jpg">
+            <a href="/images3/fulls/222.jpg"><img src="/images3/fulls/222.jpg">
+            <a href="/images3/fulls/2.jpg"><img src="/images3/fulls/2.jpg">
+            <a href="/images3/fulls/4.jpg"><img src="/images3/fulls/4.jpg">
+            <a href="/images3/fulls/6.jpg"><img src="/images3/fulls/6.jpg">
+            <a href="/images3/fulls/7.jpg"><img src="/images3/fulls/7.jpg">
+        </div> 
+-->
+
+<div class="row">
+  <div class="column">
+    <img src="/images3/fulls/1.jpg" width="400px" onclick="openModal();currentSlide(1)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="/images3/fulls/3.jpg" width="400px" onclick="openModal();currentSlide(2)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="/images3/fulls/5.jpg" width="400px" onclick="openModal();currentSlide(3)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="/images3/fulls/8.jpg" width="400px" onclick="openModal();currentSlide(4)" class="hover-shadow">
+  </div>
+</div> 
+
+<!-- The Modal/Lightbox -->
+
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 4</div>
+      <img src="/images3/fulls/1.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 4</div>
+      <img src="/images3/fulls/3.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 4</div>
+      <img src="/images3/fulls/5.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">4 / 4</div>
+      <img src="/images3/fulls/8.jpg" style="width:100%">
+    </div>
+    
+
+    <!-- Next/previous controls -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <!-- Caption text -->
+    
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div> 
+
+    <!-- Thumbnail image controls -->
+    <div class="column">
+      <img class="demo" src="/images3/fulls/8.jpg" width="400px" onclick="currentSlide(1)" alt="Nature">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="/images3/fulls/5.jpg" width="400px" onclick="currentSlide(2)" alt="Snow">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="/images3/fulls/9.jpg" width="400px" onclick="currentSlide(3)" alt="Mountains">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="/images3/fulls/BKK6.jpg" width="400px" onclick="currentSlide(4)" alt="Lights">
+    </div>
+  </div>
+</div> 
+
+<script src="assets3/js/gallery.js"></script>
+
+    </body>
+
+    
+</html>

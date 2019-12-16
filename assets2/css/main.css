@@ -2261,7 +2261,7 @@ input, select, textarea {
 /* One */
 
 	#one {
-		background: url("images2/overlay.png"), url("../../images2/one1.jpg");
+		background: url("images2/overlay.png"), url("../../images2/16.jpg");
 		background-size: 256px 256px, cover;
 		background-attachment: fixed, fixed;
 		background-position: top left, center center;
@@ -2270,7 +2270,7 @@ input, select, textarea {
 /* Two */
 
 	#two {
-		background: url("images2/overlay.png"), url("../../images2/two22.jpg");
+		background: url("images2/overlay.png"), url("../../images2/self.jpg");
 		background-size: 256px 256px, cover;
 		background-attachment: fixed, fixed;
 		background-position: top left, center center;
