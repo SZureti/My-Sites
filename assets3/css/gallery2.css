@@ -1,0 +1,127 @@
+/* Nav */
+/* Header */
+
+#header {
+  font-weight: 700;
+}
+
+/* Menu */
+
+#nav {
+  background: #0d1217;
+  /*background: black;*/
+  z-index: 10002;
+  position: relative;
+  width: 4em;
+}
+
+  #nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    top: 1em;
+    left: 0;
+  }
+
+    #nav ul li {
+      padding: 0;
+      width: 3.75em;
+      text-align: Center;
+      margin-bottom: 1em;
+    }
+
+      #nav ul li a {
+        color: rgba(255, 255, 255, 0.5);
+        text-decoration: none;
+        font-size: 1.5em;
+      }
+
+        #nav ul li a:hover {
+          color: white;
+        }
+
+        #nav ul li a.active {
+          color: #19B5FE;
+        }
+
+      @media screen and (max-width: 736px) {
+
+        #nav ul li {
+          width: 3.4em;
+        }
+
+      }
+
+
+/* main */
+
+body {
+    font-family: sans serif;
+    background-color: black;
+}
+
+body.is-loading *, body.is-loading *:before, body.is-loading *:after {
+    -moz-animation: none !important;
+    -webkit-animation: none !important;
+    -ms-animation: none !important;
+    animation: none !important;
+    -moz-transition: none !important;
+    -webkit-transition: none !important;
+    -ms-transition: none !important;
+    transition: none !important;
+}
+/* 
+h1 {
+    text-align: center;
+    margin: 30px 0 50px;
+    color:  #ed4933;
+    padding-top: 100px;
+}
+
+nav{
+    background-color: black;
+    height: 50px;
+    right: 0.5em;
+    width: 100%;
+    position: absolute;
+	top: 0;
+    height: 3em;
+	line-height: 3em;
+}
+
+nav a{
+    color:  #ed4933; 
+} */
+
+.gallery {
+    margin: 10px 50px;
+}
+
+.gallery img {
+    /* width: 250px; */
+    height: 250px;
+    padding: 5px;
+    filter: grayscale(100%);
+    /* vertical-align: middle; */
+    vertical-align: baseline;
+    -moz-transition: -moz-transform 0.2s ease-in-out;
+	-webkit-transition: -webkit-transform 0.2s ease-in-out;
+	-ms-transition: -ms-transform 0.2s ease-in-out;
+	transition: transform 0.2s ease-in-out;
+	max-width: 100%;
+}
+
+.gallery img:hover{
+    filter: grayscale(0%);
+    /* transform: scale(1.2); */
+    -moz-transform: scale(1.075);
+					-webkit-transform: scale(1.075);
+					-ms-transform: scale(1.075);
+					transform: scale(1.075);
+}
+
+
+
+/* dark lightbox */
+

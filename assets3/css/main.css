@@ -854,15 +854,17 @@
 				.gallery .content .media a {
 					display: block;
 				}
-
+/* Changed height of photos in gallery */
 				.gallery .content .media img {
 					-moz-transition: -moz-transform 0.2s ease-in-out;
 					-webkit-transition: -webkit-transform 0.2s ease-in-out;
 					-ms-transition: -ms-transform 0.2s ease-in-out;
 					transition: transform 0.2s ease-in-out;
 					max-width: 100%;
-					height: auto;
+					/* height: auto; */
+					height: 250px;
 					vertical-align: middle;
+					filter: grayscale(100%);
 				}
 
 				.gallery .content .media:hover img {
@@ -870,6 +872,7 @@
 					-webkit-transform: scale(1.075);
 					-ms-transform: scale(1.075);
 					transform: scale(1.075);
+					filter: grayscale(0%);
 				}
 
 				@media screen and (max-width: 736px) {
